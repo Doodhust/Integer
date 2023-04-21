@@ -313,7 +313,7 @@ Integer Integer::operator/(const Integer& other) const {
     }
 
 
-    result.sign = mine.sign != other.sign;
+    result.sign = mine.sign == other.sign;
 
     return result;
 
